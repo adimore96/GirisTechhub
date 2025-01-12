@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+        .wrapper{
+            margin: 20px;
+            border: 2px solid black;
+            min-height: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+            align-content: space-evenly;
+
+        }
+
+        .box{
+            width: 300px;
+            height: 150px;
+            border: 1px solid black;
+            text-align: center;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;justify-content: center;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+        <div class="box">Box-5</div>
+        <div class="box">Box-6</div>
+        <div class="box">Box-7</div>
+        <div class="box">Box-8</div>
+        <div class="box">Box-9</div>
+
+    </div>
+    
+</body>
+</html>

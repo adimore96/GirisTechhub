@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "aside article"
+                "footer footer";
+            grid-template-rows: 100px 1fr 50px;
+            grid-template-columns: 1fr 3fr;
+            height: 100vh;
+            gap: 10px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #a0d8d3;
+            text-align: center;
+            line-height: 100px;
+            font-size: 24px;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: #5da59a;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        article {
+            grid-area: article;
+            background-color: #f9a8a8;
+            padding: 20px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .image-container {
+            width: 100px;
+            height: 100px;
+            background-color: #d3a0f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #a0d8d3;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <aside>Aside</aside>
+        <article>
+            <div class="image-container">Image</div>
+            <div class="image-container">Image</div>
+            <div class="image-container">Image</div>
+        </article>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

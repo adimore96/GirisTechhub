@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		table {
+			width: 500px;
+		}
+
+		table,
+		td {
+			border: 1px solid black;
+
+		}
+	</style>
+</head>
+
+<body>
+
+	<form>
+
+		<table>
+			<!--   first row  -->
+			<tr>
+				<th colspan="2">Fill the form below</th>
+
+			</tr>
+
+			<!-- second row -->
+			<tr>
+				<td> <label for="fullName">Name</label></td>
+				<td> <input type="text" name="fullName" id="fullName"></td>
+			</tr>
+
+			<!-- third row  -->
+			<tr>
+				<td> <label for="password">Password</label></td>
+				<td> <input type="password" name="password" id="password"></td>
+			</tr>
+			<!-- fourth row -->
+			<tr>
+				<td><label for="feedback">Feedback</label></td>
+				<td><textarea name="feedback" cols="30" rows="7" id="feedback"></textarea></td>
+			</tr>
+
+			<!-- fifith row  -->
+			<tr>
+				<td> <label>Gender</label></td>
+				<td>
+
+					<input type="radio" name="gender" id="male" value="male">
+					<label for="male">Male</label>
+
+					<input type="radio" name="gender" id="female" value="female">
+					<label for="female">Female</label>
+				</td>
+			</tr>
+
+			<!-- sixth row -->
+			<tr>
+				<td>
+					<label>Subject</label>
+				</td>
+				<td>
+
+					<input type="checkbox" id="web" name="subject" value="web">
+					<label for="web">Web</label>
+
+					<input type="checkbox" id="graphics" name="subject" value="graphics">
+					<label for="graphics">Graphics</label>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>
+					<button type="submit"> Submit Data</button>
+				</td>
+			</tr>
+		</table>
+
+
+
+
+
+	</form>
+
+</body>
+
+</html>

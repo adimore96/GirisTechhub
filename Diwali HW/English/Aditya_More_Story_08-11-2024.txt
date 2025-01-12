@@ -1,0 +1,18 @@
+Step 1 Select a word.
+	:- LEARN
+
+Step 2 Write down different words for every letter from selected word.
+	L - Logic
+	E - Energy
+	A - Ambition
+	R - Resilience
+	N - Network
+
+Step 3 Try to write down a story with those words.
+
+Arjun was a young inventor with a sharp mind and an endless supply of Energy. Driven by a strong Ambition to help his community, he spent countless hours developing ideas that could make life easier for the people in his village. Despite facing many obstacles, Arjun’s Logic and Resilience kept him focused on his goal. He knew that every setback was just another lesson to learn from.
+
+Along his journey, Arjun connected with others who shared his vision, forming a powerful Network of friends and supporters. Together, they worked tirelessly to bring positive change to their community, proving that dedication and teamwork could overcome any challenge. Through his journey, Arjun showed everyone the power of resilience and learning, inspiring them to believe in their own ability to make a difference.
+
+Moral:- 
+With determination, learning, and resilience, even the biggest dreams can become reality. Building a supportive network and staying committed to your vision can help you overcome challenges and make a meaningful impact on the world around you.

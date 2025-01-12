@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Time-Table</title>
+        <style>
+            table,td,th{
+                border: 0.5px solid black;
+                border-collapse: collapse;
+                padding: 15px 20px;
+                text-align: center;
+            }
+            table{
+                width: 500px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+            th{
+                background-color: rgb(167, 244, 218);
+            }
+            tr:nth-child(even){
+                background-color: antiquewhite;
+            }
+            tr:nth-child(odd){
+                background-color: beige;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <table>
+            <caption><b>Time Table</b></caption>
+                <tr>
+                    <th rowspan="6">Hours</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                </tr>
+
+                <tr>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Arts</td>
+                </tr>
+
+                <tr>
+                    <td>Social</td>
+                    <td>History</td>
+                    <td>English</td>
+                    <td>Social</td>
+                    <td>Sports</td>
+                </tr>
+                <tr>
+                    <th colspan="5">Lunch</th>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td rowspan="2">Project</td>
+                </tr>
+
+                <tr>
+                    <td>Social</td>
+                    <td>History</td>
+                    <td>English</td>
+                    <td>Social</td>
+                </tr>
+            </table>
+        </table>
+    </body>
+</html>

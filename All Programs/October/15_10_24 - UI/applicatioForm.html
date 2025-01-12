@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Application Form</title>
+	</head>
+	
+	<body>
+		<h1>Application Form</h1>
+		<form>
+			<label for="fname">First Name: </label>
+			<input type="text" name="fname" id="fname"/>
+			<label for="lname">Last Name: </label>
+			<input type="text" name="lname" id="lname"/> 
+			<br><br>
+			
+			<label for="dob">Date of Birth: </label>
+			<input type="date" name="dob" id="dob"/>
+			<label for="age">Age: </label>
+			<input type="number" name="age" id="age" min=1/>
+			<br><br>
+			
+			<label for="gender">Gender: </label>
+			<select name="gender" id="gender">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+			</select>
+			<label for="email">Email Address: </label>
+			<input type="email" name="email" id="email"/>
+			<br><br>
+			
+			<label>Postiton Availabel: </label>
+			<input type="radio" name="position" id="jd" value="jd"/> <label for="jd">Junior Developer</label>
+			<input type="radio" name="position" id="md" value="md"/> <label for="md">Mid-level Developer</label>
+			<input type="radio" name="position" id="sd" value="sd"/> <label for="sd">Senior Developer</label>
+			<br><br>
+			
+			<label>Programming Languages: </label>
+			<input type="Checkbox" name="java" value="java" id="java"/> <label for="java">Java</label>
+			<input type="Checkbox" name="js" value="js" id="js"/> <label for="js">JavaScript</label>
+			<input type="Checkbox" name="py" value="py" id="py"/> <label for="py">Python</label>
+			<br><br>
+			
+			<label for="password">Password: </label> <input type="password" name="password" id="password" />
+			<label for="cpassword">Confirm Password: </label> <input type="password" name="cpassword" id="cpassword" />
+			<br><br>
+			
+			<input type="submit" value="Submit" name="submit"/>
+			<input type="reset"/>
+			
+			
+		</form>
+	
+	</body>
+</html>

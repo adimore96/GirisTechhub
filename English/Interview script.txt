@@ -1,0 +1,87 @@
+
+   1) Introduction
+    - Name (if they do not mention)
+    - What are you doing currently
+    - Place you come from (optional)
+    - Family you come from like joint or nuclear (optional)
+    - Education (Either PG or UG)
+    - Technical skills
+    - Project (Name, purpose is optional)
+    - Extra-curricular activities or things
+    - Hobbies or whatever you do when you get free time
+      (Hobbies are something to which we give time intentionally 
+       regularly ex. Nothing)
+    - Concluding the introduction
+
+   2) Family (define family properly)
+    - What is family?
+    - Type of family
+    - Special persons in the family
+    - Special things about family or special occasions
+    - Members of the family
+    - Things or lessons that you learned from the family.
+
+   3) Native place 
+    - Name, its meaning & history behind it
+    - Mention about famous or special places
+    - Historical places, religious places
+    - Speciality in food or special foods
+    - People, culture & traditions
+    - Sightseeing places
+
+   4) Hobbies or what you do in your free time 
+    - What is the hobby or free time activity
+    - Why do you like that
+    - What it gives
+    - What is the role of it in shaping your personality
+
+   5) Strengths (it would be great if it gets aligned with the job role)
+    - Identification of strength
+    - What are our potentials
+    - Last time when and how did we overcome any difficult situation
+    - What people around you speak as your greatest strength or quality
+    - How it helps you in your life and career
+
+   6) Weaknesses (should not be directly connected to the job)
+    - Identification of weakness
+    - Last time when someone pointed out any mistake of ours
+    - The fears that we have
+    - What are you doing currently to overcome that weakness
+
+   7) Short-term & long-term goal
+    - Short-term can be one year
+    - Get the job & start the professional journey
+    - Long-term can be 5 years or above
+    - Looking to secure a position that has challenges & responsibility
+
+   8) Education (all)
+    - Present to Past
+    - Full Stack or Data Analytics or .NET
+    - Post-graduation & University or college
+    - Graduation & University or college
+    - 12th or Diploma
+    - 10th & School or board
+
+   9) Projects
+    - Name 
+    - Purpose or aim or objective
+    - Your role & responsibility
+    - Problem statement
+    - SDLC cycle
+    - Software or tools or technologies used
+    - Challenges
+    - Procedure
+    - Actual flow 
+    - Similar projects in the market
+    - How your project is different
+    - Future scope or orientation
+    - Summary or conclusion
+
+  10) Soft skills with proper example 
+    - Skills
+    - How these skills are beneficial for you professionally & personally
+    - Skills mentioned on their website or in the job description
+
+  11) Meaning of your name & surname
+  
+   

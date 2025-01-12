@@ -1,0 +1,126 @@
+UI-
+CSS:
+
+display properties:
+1) block: 
+	 An element with display: block takes up the full width available by default (100% of its container) and starts on a new line. Block-level elements can have specified width and height, and they force subsequent content to appear on a new line.
+	Examples: <div>, <p>, <h1>, <section>
+
+
+2) inline: 
+	An element with display: inline only takes up as much width as it needs, based on its content. Inline elements do not break the flow of the document, meaning they don’t force content onto a new line.
+	Inline elements only take up as much width as their content (they don’t respect width or height properties).
+	Examples: <span>, <a>, <strong>, <em>
+
+
+3) inline-block: 
+	 An element with display: inline-block combines the characteristics of both inline and block elements. It behaves like an inline element (i.e., it doesn’t break the flow of the document and appears on the same line), but it also respects width and height properties, like block-level elements.
+	Examples: <img>, <button>, <input>
+
+
+
+border:
+1) What is and are shorthand properties in CSS?
+---> ex: border: 2px solid black; //border: width style color;
+
+IMP: border: 5px solid red green blue yellow; //shorthand
+
+borer-width: 5px 20px; // TB LR
+border-width: T (L,R) B;
+border-width: T R B L;
+border-style: solid dashed;  TB LR
+
+border Sides:-
+border-top: use multiple properties;
+border-direction-width: use single value;
+
+
+BOX-MODEL:
+- Every HTML tag or element considered as Box.
+- This box have some properties:
+	Margin: Margin is the space outside the border.
+	Padding: Padding is the space between the content area and the border.
+	Border: The border sits between the margin (outer space) and padding (inner space).
+	Content: Content is the actual data such as Text, Image, Video, etc.
+- The width and height properties apply to the content area of the box. The total width and height of the box are affected by the padding, border, and margin as well.
+
+
+BOX-SIZING:
+ - The box-sizing property in CSS determines how the total width and height of an element are calculated, including its padding and border.
+	properties:
+	1)content-box (default): 
+		 The width and height only apply to the content area of the element. Padding and borders are added outside the defined width and height, increasing the overall size of the element.
+		Total size: 100px (content) + 20px (padding) on each side + 5px (border) on each side = 150px wide and 150px tall.
+
+	2)border-box : 
+		The width and height include padding and borders, meaning the specified size is the total size of the element, including the content, padding, and border.
+		Total size: The total size will remain 100px wide and 100px tall, with the padding and border being accounted for inside the element’s box.
+
+
+FLEXBOX:
+1) What is Flexbox?
+----> Flexbox (short for Flexible Box) is a layout model in CSS that allows you to design flexible and responsive layouts with ease. It helps to distribute space within a container and align items along both the main axis and cross axis.
+ - Flexbox works by assigning a flex container (parent element) and its child elements become flex items.
+ - By default, flex items will align themselves along the main axis (horizontally), but you can adjust this behavior using various flex properties.
+	
+2) What is Main axis and Cross axis?
+---->
+Main Axis: The main axis is the axis along which the flex container’s items are laid out. By default, this is the horizontal axis (from left to right), but it can be changed to the vertical axis if you set the flex-direction to column.
+Default: Horizontal (left to right) if flex-direction: row (the default).
+Alternative: Vertical (top to bottom) if flex-direction: column.
+
+Cross Axis: The cross axis is perpendicular to the main axis. If the main axis is horizontal, the cross axis is vertical. If the main axis is vertical, the cross axis is horizontal.
+Default: Vertical (top to bottom) if flex-direction: row (the default).
+Alternative: Horizontal (left to right) if flex-direction: column.
+
+3) Common Flexbox Properties in One Line
+---->
+i) display: flex;
+Defines a flex container, enabling flexbox on the parent.
+
+ii) flex-direction
+Defines the direction of the main axis (horizontal or vertical).
+Values: row (default), column, row-reverse, column-reverse.
+
+iii) flex-wrap
+Defines if flex items should wrap onto multiple lines.
+Values: nowrap (default), wrap, wrap-reverse.
+
+iv) justify-content
+Aligns items along the main axis (horizontal by default).
+Values: flex-start, flex-end, center, space-between, space-around, space-evenly.
+
+v) align-items
+Aligns items along the cross axis (vertical by default).
+Values: flex-start, flex-end, center, baseline, stretch (default).
+
+vi) align-self
+Allows individual items to override the align-items value for alignment along the cross axis.
+Values: auto, flex-start, flex-end, center, baseline, stretch.
+
+vii) align-content
+Aligns the entire flex container’s content along the cross axis when there is extra space.
+Values: flex-start, flex-end, center, space-between, space-around, stretch.
+
+viii) flex-grow
+Defines how much a flex item will grow relative to other flex items if there is extra space.
+Default: 0 (no growth).
+
+ix) flex-shrink
+Defines how much a flex item will shrink relative to other flex items if there is not enough space.
+Default: 1 (items will shrink if necessary).
+
+x) flex-basis
+Defines the initial size of a flex item before it is stretched or shrunk.
+Values: Any valid width/height value (px, %, etc.). Default: auto.
+xi) flex
+A shorthand for flex-grow, flex-shrink, and flex-basis.
+Example: flex: 1 (grow, shrink, and base size).
+
+xii) order
+Defines the order of flex items within the container.
+Default: 0. Can be set to any integer to change the item order.
+
+xiii) gap
+Defines the space between flex items.
+Example: gap: 10px;

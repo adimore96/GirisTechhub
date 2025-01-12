@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+.main{
+    background-image: url("Security.jpg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.main a{
+    text-decoration: none;
+    color: white;
+}
+
+.header img{
+    width: 55px;
+    height: 55px;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 60px;
+    align-items: center;
+    row-gap: 10px;
+    /* background-color: rgba(0, 0, 0, 0.479); */
+}
+
+.header .nav-links{
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    gap: 25px;
+}
+
+.content{
+    height: 300px;
+    /* background-color: aqua; */
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+.content h2{
+    font-size: 45px;
+    margin: 20px 0;
+} 
+
+.contact-us{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.contact-us img{
+    width: 50px;
+}
+
+/* Services */
+
+.services{
+    background-image: url("CyberImg2.jpg");
+    min-height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 40px;
+}
+
+.services .label{
+    margin: 25px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card{
+    max-width: 400px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.8px solid white;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.553);
+    gap: 10px;
+    text-align: center;
+}
+
+.card:hover{
+    background-color: rgba(0, 0, 0, 0.738);
+}
+
+.logo{
+    width: 35px;
+}
+/* Stats */
+.stats{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    min-height: 500px;
+    
+}
+.stats .left{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    background-color: rgb(206, 209, 209);
+    padding: 40px;
+    gap: 20px;
+}
+.stats .left h2{
+    font-size: 29px;
+}
+.stats .left p{
+    width: 300px;
+    color: rgb(88, 90, 90);
+}
+.stats .left a{
+    text-decoration: none;
+    color: brown;
+}
+.stats .right{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    gap: 35px;
+    justify-content: center;
+    padding: 40px;
+    background-color: brown;
+    color: white;
+}
+.stats .right .numbers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+.stats .right .numbers .number{
+    /* border: 1px solid black; */
+    padding: 20px;
+    width: 200px;
+}
+.stats .right .numbers .number h3{
+    font-size: 30px;
+}
+
+/* Our services */
+.realServices{
+    min-height: 500px;
+    margin: 30px 0px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.realServices .heading{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    row-gap: 20px;
+    margin-bottom: 20px;
+}
+.realServices .heading p{
+    text-align: center;
+    color: rgb(88, 90, 90);
+}
+.realServices .cards{
+    gap: 20px;
+    
+}
+.realServices .card{
+    background-color: transparent;
+    align-items: flex-start;
+    text-align: left;
+    /* border-bottom: 1px solid black; */
+    /* border: 0.1px solid black; */
+    /* background-color: antiquewhite; */
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px  gray;
+}
+.realServices .card img{
+    width: 300px;
+    height: 150px;
+    align-self: center;
+    object-fit: fill;
+    border-radius: 15px 15px 0px 0px;
+}
+.realServices .card p{
+    width: 300px;
+    color: rgb(88, 90, 90);
+}
+
+.realServices button{
+    padding: 8px 10px;
+    background-color: transparent;
+    border: 2px solid brown;
+    color: brown;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
+/* Testimonial */
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.testimonial h2{
+    font-size: 30px;
+}
+.testimonial a{
+    text-decoration: none;
+    color: brown;
+    font-weight: 600;
+}
+.testimonial .t-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.testimonial .t-card{
+    /* background-color: aqua; */
+    padding: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.testimonial .t-card img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 40px;
+}
+.testimonial .t-card h3{
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.testimonial .t-card .users{
+    display: flex;
+    gap: 9px;
+}
+.testimonial .t-card .users .info p{
+    color: rgb(88, 90, 90);
+}
+
+
+/* Footer */
+.footer{
+    background-color: rgba(0, 0, 0, 0.944);
+    /* background-color: rgba(0, 0, 0, 0.889); */
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+}
+.footer .social{
+    width: 350px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.footer .social img{
+    width: 55px;
+}
+.footer .social .media img{
+    width: 20px;
+}
+
+.footer .fServices{
+    width: 350px;
+    padding: 20px;
+}
+.footer .fServices .fLinks{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-top: 5px;
+    
+}
+.footer .fServices .fLinks a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+/* Copyrights */
+.copyRights{
+    background-color: rgba(0, 0, 0, 0.944);
+    padding: 20px 40px;
+    
+    color: rgb(88, 90, 90);
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: space-between;
+    text-align: center;
+}
+.copyRights .cp{
+    width: 500px;
+}
+.copyRights .pw{
+    width: 500px;
+}

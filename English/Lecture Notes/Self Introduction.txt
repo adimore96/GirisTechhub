@@ -1,0 +1,12 @@
+Hi, I'm Aditya More and I'm form Pune Maharashtra. I have completed my diploma in computer engineering with 86%, and I am currently pursuing a Bachelor's degree in computer engineering. 
+
+Throughout my academic journey, I have developed a strong foundation in cloud computing, and web technologies. 
+
+I have hands-on experience in both front-end and back-end development, and I’m constantly working on personal projects to enhance my skills.
+
+//My Short term goal is to get a jab and long term goal is to join a reputed company.
+Also I've particapted in state level project competation and i won the 3rd price and project was about iot based smoke and gas detection system.
+
+Also I've earned certifications, such as AWS Certified Cloud Practitioner, and completed a React JS course. I’m passionate about leveraging technology to solve real-world problems, and I’m always eager to learn and grow in this ever-evolving field.
+
+this is all about myself.

@@ -1,0 +1,17 @@
+Good Morning Sir,
+My name is Aditya More, and I'm from Pune Maharashtra. and I'm currently pursuing my Bachelor’s Degree in Computer Engineering, where I have maintained a CGPA of 8.6 so far,And I've completed my Diploma in Computer Engineering with 86%,
+
+I’m passionate about web development, having hands-on experience with front-end technologies like HTML5, CSS3, JavaScript, and back-end technologies including Node.js, Express.js, PHP, MongoDB and MySQL. 
+I have built several personal projects, such as a Med-Finder website, a News App, and an Attendance Portal, which have helped me enhance my problem-solving and coding skills.
+
+In addition to my technical skills, I have passed an AWS Cloud Practitioner Certification, which has given me a solid understanding of cloud services, security, and architecture, enhancing my ability to work on cloud-based applications.
+
+In terms of soft skills, I’m a good communicator and highly adaptable to new environments. 
+My strong time management and attention to detail enable me to balance multiple tasks and deadlines effectively.
+
+Outside of academics and work, I enjoy playing video games, which helps me sharpen my problem-solving abilities, and traveling, which broadens my perspective and creativity.
+
+
+I am excited about the opportunity to contribute to your team, bringing my passion for building efficient and scalable web applications and continuously improving my skills in software development.
+
+Thank you!

@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.nav ul{
+    gap: 25px;
+    margin-right: 40px
+}
+
+.navbar ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbar .logo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    color: rgb(63, 56, 56);
+}
+
+.navbar ul li{
+    color: rgb(63, 56, 56);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Main */
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    padding-bottom: 0;
+    background-color: rgb(221, 254, 254);
+    height: calc(100vh - 40px);
+
+    
+}
+
+.main img{
+    width: 300px;
+    border-radius: 0px 40px;
+}
+
+.main h2{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main button{
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: brown;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.main button:hover{
+    color: aquamarine;
+}
+
+/* capabilities */
+.capabilities{
+    background-color: brown;
+    /* height: 450px; */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 60vh;
+    justify-content: center;
+
+}
+
+.capabilities div{
+    width: 400px;
+    font-size: small;
+}
+
+.capabilities .cards{
+    display: flex;
+    color: black;
+    width: 100%;
+    margin-top:  15px;
+    justify-content: center;
+    gap: 15px;
+}
+
+.capabilities .card{
+    padding: 15px;
+    background-color: aliceblue;
+    border-radius: 12px;
+}
+
+.card p{
+    padding: 5px;
+}
+
+/* Services */
+
+.services{
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: azure;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    padding-top: 250px;
+}
+
+.services h2{
+    font-size: xx-large;
+}
+
+/* .serv1 p{
+    width: 500px;
+} */
+
+.serv1{
+    width: 500px;
+    padding: 30px;
+}
+.serv2{
+    width: 500px;
+}
