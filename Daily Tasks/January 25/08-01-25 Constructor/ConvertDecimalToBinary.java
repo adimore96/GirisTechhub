@@ -11,8 +11,6 @@ class ConvertDecimalToBinary{
 	}
 	
 	void showBinary(){
-		int temp = decimal;
-		
 		StringBuilder binary = new StringBuilder();
 		while(decimal>0){
 			int mod = decimal%2;
