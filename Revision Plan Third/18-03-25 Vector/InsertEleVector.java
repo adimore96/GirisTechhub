@@ -16,6 +16,7 @@ public class InsertEleVector{
 
         //Adding element at 2nd position
         v.add(1,100);
+        v.set(1,200);
         System.out.print("Vector Elements: ");
         for(int i=0; i<v.size(); i++){
             System.out.print(v.get(i)+" ");
