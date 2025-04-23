@@ -6,7 +6,10 @@ class Table1 extends Thread{
     public void run(){
         try{
             for(int i=1; i<=10; i++){
-            System.out.println(num +"*"+i+" = "+ (num*i) );
+            System.out.println(num +"*"+i+" = "+ (num*i) +"Thread isAlive:"+isAlive());
+            if(i==3){
+                stop();
+            }
             Thread.sleep(660);
             }
         }catch(Exception ex){
@@ -33,11 +36,12 @@ class Table2 extends Thread{
 }
 
 public class TablePrint{
-    public static void main(String args[]){
+    public static void main(String args[]) throws Exception{
         Table1 t1 = new Table1(5);
         t1.start();
+        t1.join();
+        System.out.println(t1.isAlive());
         Table2 t2 = new Table2(10);
         t2.start();
-        
     }
 }
