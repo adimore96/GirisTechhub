@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: antiquewhite;
+            
+        }
+    </style>
+    <script>
+        function bodyFun(){
+            let container = document.getElementById("container");
+            container.style.border = "2px solid black";
+            container.style.width = "500px"
+            container.style.height = "600px"
+            container.style.position = "absolute"
+            container.style.top = "50%"
+            container.style.left = "50%"
+            container.style.borderRadius = "2px 25px 25px 25px";
+            container.style.transform = "translate(-50%,-50%)"
+
+            // TextBox
+            let textBox = document.createElement("input");
+            textBox.setAttribute("type","text");
+            textBox.setAttribute("id","textBox");
+            textBox.style.width = "100%";
+            textBox.style.height = "100px";
+            textBox.style.fontSize = "26px"
+            textBox.style.paddingLeft = "15px"
+            textBox.style.boxSizing = "border-box"
+            textBox.style.border = "none";
+            textBox.style.borderRadius = "2px 25px 2px 25px";
+            
+            container.appendChild(textBox);
+            document.getElementById("textBox").addEventListener('focus', (e)=>{
+            // this.style.border = 'none';
+            e.target.style.outline = 'none';   
+            });
+            // End of TextBox
+
+            // Creating the Buttons
+            let calcButtons = [
+                [1,2,3,'+'],
+                [4,5,6,'-'],
+                [7,8,9,'*'],
+                [0,'.','=','/']
+            ];
+
+            let table = document.createElement("table");
+            table.style.width = "100%";
+            table.style.height = "calc(80% - 25px)";
+            // table.style.border = "1px solid red";
+            container.appendChild(table);
+            let value = "";
+            let first, second, result,choice;
+            calcButtons.forEach(element => {
+                
+                
+                let tr = document.createElement("tr");
+                element.forEach((el) => {
+                    // console.log(el);
+                    let td = document.createElement("td");
+                    // td.style.border = "1px solid black";
+                    td.style.position = "relative";
+
+
+                    let button = document.createElement("input");
+                    button.setAttribute('type','button');
+                    button.setAttribute('value',el);
+                    button.setAttribute('name',"button");
+                   
+                    button.style.width = "80%";
+                    button.style.height = "50%";
+                    button.style.borderRadius = "12px";
+                    button.style.border = "none";
+                    button.style.fontSize = "20px";
+                    button.style.backgroundColor = "darkkhaki";
+                    button.style.color = "white";
+                    button.style.cursor = "pointer";
+                    button.style.position = "absolute";
+                    button.style.top = "50%";
+                    button.style.left = "50%";
+                    button.style.transform = "translate(-50%,-50%)";
+                    // button.style.
+                    td.appendChild(button);
+                    // console.log(button);
+                    tr.appendChild(td);
+                    
+                   button.addEventListener("mouseover", function(){
+                    button.style.backgroundColor = "#928e51";
+                    button.style.color = "white";
+                    
+                   })
+                   button.addEventListener("mouseleave", function(){
+                    button.style.backgroundColor = "darkkhaki";
+                    button.style.color = "white";
+                    
+                   })
+
+                    
+                    button.addEventListener("click", function(){
+                        // console.log(button.value);
+                        // value = value + button.value;
+                        let currValue = this.value;
+                        value = textBox.value + currValue;
+                        textBox.value = value;
+                        // console.log(value);
+                        textBox.value = value;
+
+                        if(this.value=="+"){
+                            textBox.value="";
+                            let val = parseInt(value.trim());
+                            first = val;
+                            // console.log(first);  
+                            choice = 1;
+                        }
+                        if(this.value=="-"){
+                            textBox.value="";
+                            let val = parseInt(value.trim());
+                            first = val;
+                            choice = 2;
+                        }
+                        if(this.value=="/"){
+                            textBox.value="";
+                            let val = parseInt(value.trim());
+                            first = val;
+                            choice = 3;
+                        }
+                        if(this.value=="*"){
+                            textBox.value="";
+                            let val = parseInt(value.trim());
+                            first = val;
+                            choice = 4;
+                        }
+                        
+                        if(this.value=="="){
+                            second = parseInt(value.trim());
+                            
+                            if(choice==1){
+                                textBox.value = eval(first+second);
+                            }
+                            else if(choice==2){
+                                textBox.value = eval(first-second);
+                            }
+                            else if(choice==3){
+                                textBox.value = eval(first/second);
+                            }
+                            else if(choice==4){
+                                textBox.value = eval(first*second);
+                            }
+                            
+                            
+                        }
+                        
+                        
+                    })
+                })
+                table.appendChild(tr);
+            });
+            
+
+            
+        }
+
+    </script>
+</head>
+<body onload="bodyFun()">
+    <div id="container">
+        
+    </div>
+
+</body>
+</html>
