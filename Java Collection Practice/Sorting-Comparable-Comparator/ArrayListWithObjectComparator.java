@@ -48,9 +48,9 @@ public class ArrayListWithObjectComparator{
         al.add(new Pojo(5,"XYZ"));
         al.add(new Pojo(15,"PQR"));
 
-        SortById sid = new SortById();
+        Comparator c = new SortById();
         System.out.println("Sort by ID");
-        Collections.sort(al,sid);
+        Collections.sort(al,c);
 
         ListIterator<Pojo> itr = al.listIterator();
 
@@ -60,9 +60,9 @@ public class ArrayListWithObjectComparator{
         }
 
 
-        SortByName sname = new SortByName();
+        c = new SortByName();
         System.out.println("Sort by Name");
-        Collections.sort(al,sname);
+        Collections.sort(al,c);
 
          itr = al.listIterator();
 
