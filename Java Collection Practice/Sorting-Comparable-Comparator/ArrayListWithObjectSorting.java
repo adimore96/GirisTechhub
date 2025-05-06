@@ -1,8 +1,8 @@
 import java.util.*;
 
-class Pojo implements Comparable {
-    public int id;
-    public String name;
+class Pojo implements Comparable<Pojo> {
+    private int id;
+    private String name;
 
     Pojo(int id, String name){
         this.id = id;
@@ -17,12 +17,11 @@ class Pojo implements Comparable {
     }
 
     // Override the compareTo(Object) method
-    public int compareTo(Object obj){
-        Pojo obj1 = (Pojo) obj;
-        if(this.id>obj1.id){
+    public int compareTo(Pojo obj){
+        if(this.id>obj.id){
             return 1;
         }
-        else if(this.id<obj1.id){
+        else if(this.id<obj.id){
             return -1;
         }else{
             return 0;
