@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        form{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 500px;
+            border: 1px solid black;
+            border-radius: 15px 5px 15px 3px ;
+            box-shadow: -5px 5px 50px 10px #888888 ;
+            padding: 25px 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        form div{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 20px;
+            /* border: 1px solid black; */
+        }
+        form div input{
+            width: 45%;
+        }
+    </style>
+
+    <!-- Handle errors in the form using JS -->
+    <script>
+         function isValid(){
+            console.log("Function is called");
+            
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form action="/save" method="get" onsubmit="return isValid()">
+        <div class="div">
+            <input placeholder="name" type="text" name="name" id="name">
+        <input placeholder="email" type="email" name="email" id="email">
+        <input placeholder="contact" type="text" name="contact" id="contact">
+        <select name="qu" id="qu">
+            <option value="null">Select Qualification</option>
+            <option value="BE">BE</option>
+            <option value="BTech">BTech</option>
+        </select>
+
+        <input type="date" name="dob" id="dob">
+        <select name="uni" id="uni">
+            <option value="Select Uni">Select Uni</option>
+            <option value="SPPU">SPPU</option>
+            <option value="DBATU">DBATU</option>
+        </select>
+        </div>
+        <input type="submit" name="submit"  value="submit" style="width: 50%;">
+    </form>
+</body>
+</html>
