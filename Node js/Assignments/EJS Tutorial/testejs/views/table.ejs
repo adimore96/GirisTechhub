@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table EJS</title>
+</head>
+<body>
+
+    <%- include("navbar") %>
+
+    <div class="formContainer">
+        <form action="/table" method="get">
+        <input type="number" name="num" id="num" autofocus value="<%= typeof num != 'undefined' ? num : ''  %>">
+        <input type="submit" value="submit">  
+        
+        <hr>
+        
+    </form>
+
+    
+
+        <% if(num){ %>
+            
+            <table>
+                <tr>
+                    <th>Iteration</th>
+                    <th>X</th>
+                    <th>Number</th>
+                    <th>=</th>
+                    <th>Result</th>
+                </tr>
+
+                <tbody>
+                    <% for (let i = 1; i <= 10; i++) { %>
+                        <tr>
+                        <td><%= i %></td>
+                        <td>X</td>
+                        <td><%= num %></td>
+                        <td>=</td>
+                        <td><%= i*num %></td>
+                    </tr>
+                        
+                    <% } %>
+                    
+                </tbody>
+            </table>
+
+        <% } %>
+    </div>
+
+    
+    <!-- Script for autofocus to make cursor at the end of value -->
+    <script>
+  window.addEventListener('DOMContentLoaded', function () {
+    const input = document.getElementById('num');
+    input.focus();
+    // Move the cursor to the end
+    const val = input.value;
+    input.value = '';
+    input.value = val;
+  });
+
+</script>
+</body>
+</html>
