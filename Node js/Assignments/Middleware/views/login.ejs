@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="container">
+        <form action="/save" method="post">
+            <h3>Login here</h3>
+            <input type="text" name="user" id="user" placeholder="username"> 
+            <input type="password" name="pass" id="pass" placeholder="password"> 
+            <input class="btn" type="submit" name="submit" id="submit"> 
+            <%= msg %>
+        </form>
+    </div>
+</body>
+</html>
