@@ -1,0 +1,64 @@
+<%- include("header.ejs") %>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="/ajax.js"></script>
+</head>
+
+<h3 class="m-5 mx-auto  text-center">Department List</h3>
+<div class="container mt-5 text-center border p-5 rounded bg-light">
+    
+
+
+    <div class="form-group m-3 col-6 mx-auto">
+        <input type="text" name="name" onkeyup="searchDept(this.value)" id="name" class="form-control" autocomplete="off">
+    </div>
+
+
+    <% if (msg=="11") { %>
+        <div class="alert alert-success" role="alert">
+            Dept Deleted Successfully...
+        </div>
+    <% }else if(msg=="00"){
+    %>
+     <div class="alert alert-danger" role="alert">
+            <%= "Dept unable to Delete :(" %>
+        </div>
+    <%
+    } %>
+
+
+    <% if (deptList.length > 0) { %>
+        <table style="outline: 1px solid black; border-radius: 15px;" class="table table-striped ">
+        <tr>
+            <th>SR NO</th>
+            <th>DEPT NAME</th>
+            <th>DELETE</th>
+            <th>UPDATE</th>
+        </tr>
+        <tbody id="tblBody" >
+            <%
+                deptList.forEach((row,index) => {
+            %>
+
+            <tr>
+                <td><%= index+1 %></td>
+                <td><%= row.deptname %></td>
+                <td><a style="color: red;" href="/deltdelt/<%= row.deptid %>"><i class="fa-solid fa-trash"></i></a></td>
+
+                <td><a style="color: rgb(47, 179, 255);" href="/updatedept/<%= row.deptid %>"><i class="fa-solid fa-file-pen"></i></a></td>
+            </tr>
+            <%       
+                }); 
+            %>
+         </tbody>
+    </table>
+    <% }else{
+    %>
+    <p>No data found :(</p>
+    <%
+    } %>
+    
+</div>
+
+<%- include("footer.ejs") %>

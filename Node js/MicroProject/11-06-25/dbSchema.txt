@@ -1,0 +1,7 @@
+ create table dept(deptid int(5) primary key auto_increment, deptname varchar(255) not null unique);
+
+create table employee( eid int(5) primary key auto_increment, name varchar(200) not null, email varchar(200) not null unique, contact varchar(10) not null unique, sal int(5) default 0, photo varchar(200), deptid int(5), foreign key(deptid) references dept(deptid) on delete cascade on update cascade);
+
+node23 13:00
+node29 02:48
+node31 00:00

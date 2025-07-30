@@ -1,0 +1,47 @@
+<%- include("header.ejs") %>
+
+
+<!-- Form -->
+    <div class="container bg-dark p-5 mt-5 rounded">
+        <form action="/saveemp" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="text" class="form-control control" name="name" id="name" placeholder="Enter Employee name">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control control" name="email" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control control" name="contact" id="contact" placeholder="Enter contact">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control control" name="salary" id="salary" placeholder="Enter salary">
+            </div>
+            <div class="form-group">
+                <input type="file" class="form-control control" name="photo" id="photo">
+            </div>
+
+            <div class="form-group">
+                <select name="deptid" id="deptid" class="form-control control">
+                    <option value="#">Choose DEPT</option>
+                    <% 
+                        deptList.forEach((deptData,index) => {
+                        %>
+                            <option value="<%= deptData.deptid %>"><%=deptData.deptname %></option>
+                        <%
+                        });
+                    %>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="form-control control btn btn-primary " name="submit" value="Add new employee">
+            </div>
+
+             <% if (msg) { %>
+              <div class="alert alert-success" role="alert">
+            <%= msg %>
+            </div>
+            <% } %>
+        </form>
+    </div>
+
+<%- include("footer.ejs") %>
