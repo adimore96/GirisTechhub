@@ -62,3 +62,46 @@ let checkEmailExistance = (str) =>{
     xhttp.open("get","/searchEmail?e="+str, true);
     xhttp.send();
 }
+
+let getEmployeeByDept = () =>{
+    let deptId = parseInt(document.getElementById("deptid").value)
+    
+    
+    let xhttp = new XMLHttpRequest();
+
+    xhttp.onreadystatechange = function(){
+        if(this.readyState==4 && this.status==200){
+            let response = JSON.parse(this.responseText);
+            console.log(response);
+
+            let tblbody = document.getElementById("tblbody");
+            tblbody.innerHTML = "";
+            response.forEach((row,index)=>{
+                let tr = document.createElement("tr");
+                let name =document.createElement("td");
+                name.innerText = row.name;
+                let email = document.createElement("td");
+                email.innerText = row.email;
+                let contact = document.createElement("td");
+                contact.innerText = row.contact;
+                let photo = document.createElement("td");
+                photo.innerHTML = "<img src='/images/"+row.photo+"' width=200 height=100/>"
+                let dept = document.createElement("td");
+                dept.innerText = row.deptname;
+
+                tr.appendChild(name);
+                tr.appendChild(email);
+                tr.appendChild(contact);
+                tr.appendChild(photo);
+                tr.appendChild(dept);
+
+                tr.style.height = "100px";
+
+                tblbody.appendChild(tr);
+            })
+        }
+    }
+
+    xhttp.open("get","/getEmpByDeptId?deptId="+deptId,true);
+    xhttp.send();
+}

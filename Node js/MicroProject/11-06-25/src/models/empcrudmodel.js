@@ -21,3 +21,16 @@ exports.verifyEmail = (userEmail) =>{
         })
     })
 }
+
+// getEmployees by empId
+exports.getEmployeeByDeptId = (deptId) =>{
+    return new Promise((resolve,reject)=>{
+        conn.query("select e.name, e.email, e.contact, e.sal, e.photo, d.deptname from employee as e inner join dept as d on d.deptid = e.deptid where e.deptid=?;",[deptId], (err,result)=>{
+            if(err){
+                reject(err);
+            }else{
+                resolve(result);
+            }
+        })
+    })
+}

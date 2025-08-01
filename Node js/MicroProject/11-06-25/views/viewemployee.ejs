@@ -1,0 +1,47 @@
+<%- include("header.ejs") %>
+
+<head>
+    <script src="ajax.js"></script>
+    <style>
+        #tblbody td {
+  vertical-align: middle;
+}
+
+th, tbody{
+    text-align: center;
+}
+    </style>
+</head>
+
+<!-- Form -->
+    <div class="container form bg-dark p-5 mt-5 rounded">
+         <div class="form-group">
+                <select name="deptid" id="deptid" onchange="getEmployeeByDept()"  class="form-control control">
+                    <option value="0">Choose DEPT</option>
+                    <% 
+                        deptList.forEach((deptData,index) => {
+                        %>
+                            <option value="<%= deptData.deptid %>"><%=deptData.deptname %></option>
+                        <%
+                        });
+                    %>
+                </select>
+            </div>
+
+            <table class="table mt-3 ">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Photo</th>
+                        <th>Dept</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tblbody"></tbody>
+            </table>
+    </div>
+
+
+<%- include("footer.ejs") %>

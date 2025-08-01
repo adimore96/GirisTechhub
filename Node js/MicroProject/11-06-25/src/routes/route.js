@@ -31,4 +31,8 @@ router.post("/saveemp",multer.single("photo"),empctrl.saveEmployee);
 
 router.get("/searchEmail",empctrl.verifyEmail);
 
+router.get("/viewemployee",empctrl.viewEmployee);
+
+router.get("/getEmpByDeptId",empctrl.getEmployeeByDeptId);
+
 module.exports = router;
