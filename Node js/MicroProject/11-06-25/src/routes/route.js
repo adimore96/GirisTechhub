@@ -29,4 +29,6 @@ router.get("/newemployee",empctrl.newEmp);
 
 router.post("/saveemp",multer.single("photo"),empctrl.saveEmployee);
 
+router.get("/searchEmail",empctrl.verifyEmail);
+
 module.exports = router;

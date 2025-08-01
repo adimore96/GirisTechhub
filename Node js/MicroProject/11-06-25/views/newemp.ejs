@@ -1,15 +1,19 @@
 <%- include("header.ejs") %>
 
+<head>
+    <script src="ajax.js"></script>
+</head>
 
 <!-- Form -->
-    <div class="container bg-dark p-5 mt-5 rounded">
+    <div class="container form bg-dark p-5 mt-5 rounded">
         <form action="/saveemp" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <input type="text" class="form-control control" name="name" id="name" placeholder="Enter Employee name">
             </div>
-            <div class="form-group">
-                <input type="email" class="form-control control" name="email" id="email" placeholder="Enter email">
+            <div class="form-group" style="">
+                <input type="email" class="form-control control" name="email" id="email" placeholder="Enter email" onblur="checkEmailExistance(this.value)"> 
             </div>
+            <label style="margin-top: 0px;  display: block;" id="labelMsg" class="text-white ms-3"></label>
             <div class="form-group">
                 <input type="text" class="form-control control" name="contact" id="contact" placeholder="Enter contact">
             </div>
@@ -33,7 +37,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <input type="submit" class="form-control control btn btn-primary " name="submit" value="Add new employee">
+                <input type="submit" class="form-control control btn btn-primary " id="submit"  name="submit" value="Add new employee">
             </div>
 
              <% if (msg) { %>

@@ -8,3 +8,16 @@ exports.saveEmployee = (...empData)=>{
         })
     })
 }
+
+// verify email exists
+exports.verifyEmail = (userEmail) =>{
+    return new Promise((resolve,reject)=>{
+        conn.query("select * from employee where email = ? ",[userEmail], (err,result)=>{
+            if(err){
+                reject(err);
+            }else{
+                resolve(result);
+            }
+        })
+    })
+}

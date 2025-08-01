@@ -24,6 +24,23 @@ exports.saveEmployee = (req,res)=>{
         res.render("newemp",{deptList:resultt,msg:result});
     })  
     })
+}
+
+// Verify email exists
+exports.verifyEmail = (req,res)=>{
+    let userEmail = req.query.e;
+
+    console.log(req.query);
     
-    
+    empCrud.verifyEmail(userEmail)
+    .then((result)=>{
+        if(result.length){
+            res.send("Email address already exists!!");
+        }else{
+            res.send("");
+        }
+    })
+    .catch((err)=>{
+        console.log(err);
+    })
 }
